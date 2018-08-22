@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet'
+			type='text/css'
+			href={{url_for("static",filename="css/style.css")}}>   <!--use jinja for rendering static files -->
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<h1>Docker Application</h1>
+	<body>
+		<nav class='navbar'>
+			<ul Class='left'>
+				<li><a href='#' class='name'>My WebApp</a></li>
+			</ul>
+			<ul Class='right'> 
+				<li><a href='#'>Home</a></li>
+				<li><a href='#'>About Us </a></li>
+			</ul>
+		</nav>
+		<div class="w3-sidebar w3-bar-block" style="width:25%"> 
+			<a href="#" class="w3-bar-item w3-button">Link 1</a>
+			<a href="#" class="w3-bar-item w3-button">Link 2</a>
+			<a href="#" class="w3-bar-item w3-button">Link 3</a>
+		</div>
+
+<!--<div style="margin-left:25%">
+... page content ...
+</div>-->
+		{%block content %}
+		{% endblock %}
+	</body>
+</html>
